@@ -7,7 +7,7 @@ align-items: center;
 font-size: 80px;
 }
 #codebox{
-display: flex;
+margin: auto;
 width: 200px;
 justify-content: center;
 align-items: center;
@@ -35,11 +35,14 @@ color:black;
 <div id="codebox">
 <script>
 let facts = ["Bees are cool.","Bees have 5 eyes.","Bees are insects, so they have 6 legs.","An average beehive can hold around 50000 bees.","Bees have two pairs of wings.","Bees' best friends are Beeclops and Beepu."];
+function beefacts(){
 document.write(facts[Math.floor(Math.random()*facts.length)]);
+}
 </script>
+<button onclick="beefacts()" class="button button1">MORE</button>
 </div>
 <div>
-<button class="button button1">MORE</button>
+
 </div>
 
 <script>
