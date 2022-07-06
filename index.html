@@ -1,71 +1,76 @@
 <html>
-
-<head>
-  <style>
-    #title {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 80px;
-    }
-
-    #codebox {
-      margin: auto;
-      margin-bottom: 10px;
-      margin-top: 20px;
-      width: 400px;
-      height: 50px;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      border: 2px solid rgb(0, 0, 0);
-    }
-
-    #but {
-      margin: auto;
-      width: 100px;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .button1 {
-      background-color: white;
-      color: black;
-      border: 2px solid black;
-    }
-
-    .button1:hover {
-      background-color: yellow;
-      color: black;
-    }
-  </style>
-</head>
-
-<body>
-
-  <div id="title">
-    <img src="beerime.png"> FACTS
-  </div>
-
-  <div id="codebox">
-    <script>
-      let facts = ["Bees are cool.", "Bees have 5 eyes.", "Bees are insects, so they have 6 legs.", "An average beehive can hold around 50000 bees.", "Bees have two pairs of wings.", "Bees' best friends are Beeclops and Beepu."];
-      function beefacts() {
-        document.write(facts[Math.floor(Math.random() * facts.length)]);
+  <head>
+    <style>
+      #title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 80px;
       }
-      beefacts();
+
+      #codebox {
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        width: 400px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 2px solid rgb(0, 0, 0);
+      }
+
+      #but {
+        margin: auto;
+        width: 100px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .button1 {
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+      }
+
+      .button1:hover {
+        background-color: yellow;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="title"><img src="beerime.png" /> FACTS</div>
+
+    <div id="codebox">
+      <script>
+        let facts = [
+          "Bees are cool.",
+          "Bees have 5 eyes.",
+          "Bees are insects, so they have 6 legs.",
+          "An average beehive can hold around 50000 bees.",
+          "Bees have two pairs of wings.",
+          "Bees' best friends are Beeclops and Beepu.",
+        ];
+        function beefacts() {
+          document.write(facts[Math.floor(Math.random() * facts.length)]);
+        }
+        beefacts();
+      </script>
+    </div>
+
+    <div id="but">
+      <button
+        onclick='document.getElementById("codebox").innerHTML = facts[Math.floor(Math.random()*facts.length)]'
+        class="button button1"
+      >
+        MORE
+      </button>
+    </div>
+
+    <script>
+      console.log("I am a bee");
     </script>
-  </div>
-
-  <div id="but">
-    <button onclick='document.getElementById("codebox").innerHTML = facts[Math.floor(Math.random()*facts.length)]'
-      class="button button1">MORE</button>
-  </div>
-
-  <script>
-    console.log("I am a bee");
-  </script>
-
-</body>
-
+  </body>
 </html>
