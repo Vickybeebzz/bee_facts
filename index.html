@@ -8,7 +8,7 @@
         font-size: 80px;
       }
 
-      #codebox {
+      #factbox {
         margin: auto;
         margin-bottom: 10px;
         margin-top: 20px;
@@ -20,20 +20,20 @@
         border: 2px solid rgb(0, 0, 0);
       }
 
-      #but {
+      #btn-Container {
         margin: auto;
         width: 100px;
         justify-content: center;
         align-items: center;
       }
 
-      .button1 {
+      .btn {
         background-color: white;
         color: black;
         border: 2px solid black;
       }
 
-      .button1:hover {
+      .btn:hover {
         background-color: yellow;
         color: black;
       }
@@ -43,10 +43,10 @@
   <body>
     <div id="title"><img src="beerime.png" /> FACTS</div>
 
-    <div id="codebox"></div>
+    <div id="factbox"></div>
 
-    <div id="but">
-      <button id="button" class="button button1">MORE</button>
+    <div id="btn-Container">
+      <button id="button" class="button btn">MORE</button>
     </div>
 
     <script>
@@ -64,7 +64,7 @@
       }
 
       function writeFact() {
-        document.getElementById("codebox").innerHTML = getRandomFact();
+        document.getElementById("factbox").innerHTML = getRandomFact();
       }
 
       writeFact();
